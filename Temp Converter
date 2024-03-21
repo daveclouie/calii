@@ -1,0 +1,21 @@
+
+package com.mycompany.temperatureconverter;
+import java.util.Scanner;
+public class TemperatureConverter {
+
+    public static double celciusToFahrenheit(double celcius) {
+        return (celcius * 9/5)+ 32;
+      
+    }
+      public static double fahrenheitToCelcius(double fahrenheit){
+          return (fahrenheit -32)*5/9;
+      }
+      public static void main(String[] args){
+          Scanner t = new Scanner(System.in);
+          System.out.println("Enter value: ");
+          double celcius =t.nextDouble();
+          double fahrenheit=celciusToFahrenheit(celcius);
+          System.out.println(celcius +  "Celcius is equal to " + fahrenheit+ "fahrenheit.");
+              
+      }
+}
